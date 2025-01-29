@@ -1,5 +1,5 @@
 #FutureTime.py
-#Name:
+#Name: Luke Knofczynski
 #Date:
 #Assignment:
 
@@ -16,7 +16,23 @@ def main():
 
   #TODO:
   #Ask user for hours
+  
+  minutes = input("Enter Minutes: ")
+  minutes = int(minutes)
+  
+  futureMinute = currentMinute + minutes
+  futureMinute = futureMinute % 60
+
+  print(futureMinute)
+  hours = input("Enter Hours: ")
+  hours = int(hours)
+
+  futureHour = currentHour + hours
+  futureHour = futureHour % 24
+
+  print(futureHour)
   #Ask user for minutes
+
 
   #Calculate the time after the user-supplied time has passed.
 
