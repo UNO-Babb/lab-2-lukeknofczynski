@@ -23,23 +23,17 @@ def main():
   futureMinute = currentMinute + minutes
   futureMinute = futureMinute % 60
 
-  print(futureMinute)
+  addedHour = currentMinute + minutes
+  addedHour = addedHour //60
+
   hours = input("Enter Hours: ")
   hours = int(hours)
 
   futureHour = currentHour + hours
+  futureHour = futureHour + addedHour
   futureHour = futureHour % 24
 
-  print(futureHour)
-  #Ask user for minutes
-
-
-  #Calculate the time after the user-supplied time has passed.
-
-  #Do not use any if statements in calculating the time.
-
-  #Output the future time in standard format "HH:MM"
-
+  print(futureHour, ":", futureMinute)
 
 if __name__ == '__main__':
   main()
